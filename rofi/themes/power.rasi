@@ -1,0 +1,27 @@
+* {
+  primario: #141414;
+  green: #369428;
+
+  spacing: 0;
+  background-color: transparent;
+
+  text-color: #fff;
+}
+
+window {
+  background-color: @primario;
+  width: 150;
+  height: 100;
+  children: [listview]; /* omitir el inputbar para quitarla */
+  x-offset: 590;
+  y-offset: -285;
+}
+
+element {
+  padding: 5px;
+  cursor: pointer;
+}
+
+element selected {
+  background-color: @green;
+}
