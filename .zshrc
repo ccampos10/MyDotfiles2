@@ -100,3 +100,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+eval "$(starship init zsh)" # starship prompt
+export STARSHIP_CONFIG=~/.config/starship/starship.toml # ubicacion de la configuracion de starship

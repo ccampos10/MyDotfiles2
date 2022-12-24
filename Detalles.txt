@@ -5,7 +5,8 @@ Paquetes instalados:
 	min
 	alacritty -> terminal
 	zsh -> shel
-
+	oh my zsh
+	starship -> prompt
 	neofetch
 	alsa-lib -> para configurar el sonido
 	feh
@@ -33,4 +34,7 @@ fuentes:
 
 Drivers:
 	xf86-video-ati
+	vulkan-radeon
+	lib32-vulkan-radeon
+	libva-mesa-driver
 	
