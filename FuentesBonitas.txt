@@ -1,0 +1,19 @@
+CaskaydiaCove Nerd Font
+JetBrainsMono Nerd Font Mono
+Agave Nerd Font Mono
+CodeNewRoman Nerd Font
+mononoki Nerd Font
+Hack Nerd Font
+SpaceMono Nerd Font
+FiraCode Nerd Font
+
+2 fase
+SpaceMono Nerd Font
+mononoki Nerd Font
+CodeNewRoman Nerd Font
+Agave Nerd Font Mono
+
+Hack Nerd Font
+FiraCode Nerd Font
+JetBrainsMono Nerd Font Mono
+CaskaydiaCove Nerd Font

@@ -1,0 +1,36 @@
+Paquetes instalados:
+	rofi
+	polybar
+	qtile
+	min
+	alacritty -> terminal
+	zsh -> shel
+
+	neofetch
+	alsa-lib -> para configurar el sonido
+	feh
+	p7zip
+	htop -> administrador de tareas
+	vsCode -> paquete descargado de la pagina oficial
+
+fuentes:
+	gnu-free-fonts -> de pacman
+	Agave -> de NerdFont
+	CascadiaCode -> de NerdFont
+	CodeNewRoman -> de NerdFont
+	FiraCode -> de NerdFont
+	Hack -> de NerdFont
+	JetBrainsMono -> de NerdFont
+	Mononoki -> de NerdFont
+	SpaceMono -> de NerdFont> de NerdFont
+	CascadiaCode -> de NerdFont
+	CodeNewRoman -> de NerdFont
+	FiraCode -> de NerdFont
+	Hack -> de NerdFont
+	JetBrainsMono -> de NerdFont
+	Mononoki -> de NerdFont
+	SpaceMono -> de NerdFont
+
+Drivers:
+	xf86-video-ati
+	
