@@ -13,6 +13,8 @@ Paquetes instalados:
 	p7zip
 	htop -> administrador de tareas
 	vsCode -> paquete descargado de la pagina oficial
+	ranger -> un manejador de archivos
+	oldUeberzug -> paquete de python que muestra imagenes en consola (de mi repositorio por que el original ha sido eliminado(puede verse en los commits antiguos)), instalar con python -m pip install el archivo setup.py
 
 fuentes:
 	gnu-free-fonts -> de pacman

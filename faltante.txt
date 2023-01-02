@@ -3,5 +3,5 @@ polybar
 rofi
 explorador de archivos
 navegadores
-sudo su
 transparencia
+inicio de usuario

@@ -36,7 +36,7 @@ keys = [Key(key[0],key[1],*key[2:]) for key in [
     #Atajos para aplicacciones
     ([mod], 'Return', lazy.spawn('alacritty')),
     ([mod], 'b', lazy.spawn('firefox')),
-    ([mod], 'e', lazy.spawn('pcmanfm')),
+    ([mod], 'e', lazy.spawn('alacritty -e ranger')),
     ([mod], 'm', lazy.spawn('rofi -show drun')),
     ([mod, 'shift'], 'm', lazy.spawn('rofi -show')),
 

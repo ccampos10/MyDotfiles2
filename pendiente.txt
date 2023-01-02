@@ -1,2 +1,4 @@
 - configurar los atajos de teclado y mouse, y caracteristicas (Features) de alacritty
 - ver plugins para zsh
+- mejorar los colores
+- configurar grub
