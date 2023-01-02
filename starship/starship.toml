@@ -1,13 +1,53 @@
-# Get editor completions based on the config schema
-"$schema" = 'https://starship.rs/config-schema.json'
-
-# Inserts a blank line between shell prompts
+format = '$character$jobs([[$all](fg:black bg:white)](white) )$directory$git_branch$git_status'
 add_newline = false
 
-# Replace the '❯' symbol in the prompt with '➜'
-[character] # The name of the module we are configuring is 'character'
-success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+[directory]
+format = '([[$read_only](fg:black bg:bright-purple)]($read_only_style)) [$path]($style) '
+truncation_length = 1
+style = 'bold green'
+read_only = '  '
+read_only_style = 'bright-purple'
 
-# Disable the package module, hiding it from the prompt completely
-[package]
+[git_branch]
+format = '[$symbol]($style) '
+symbol = ' '
+style = 'italic bold purple'
+#ignore_branches = ['main','master']
+
+[git_commit]
 disabled = true
+
+[git_status]
+format = '([[$untracked$modified$ahead_behind$conflicted$ahead$behind$diverged$up_to_date$stashed$deleted$renamed$staged ](fg:bright-black bg:bright-green)]($style) )'
+untracked = ' ﱐ'
+modified = ' '
+conflicted = ' 1'
+ahead = ' 2'
+behind = ' 3'
+diverged = ' 4'
+up_to_date = ' 5'
+stashed = ' 6'
+deleted = ' '
+renamed = ' '
+staged = ' ﮅ'
+style = 'bright-green'
+
+[line_break]
+disabled = true
+
+[cmd_duration]
+disabled = true
+
+[sudo]
+disabled = true #ver que hace
+
+[jobs]
+format = '[$symbol]($style) '
+symbol = ''
+symbol_threshold = 1
+style = 'blue'
+
+[character]
+format = '$symbol '
+success_symbol = '[](bold yellow)[](bold red)'
+error_symbol ='[Error](bold red)'

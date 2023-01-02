@@ -4,5 +4,4 @@ rofi
 explorador de archivos
 navegadores
 sudo su
-pront (lo que sale en la terminal) starship
 transparencia

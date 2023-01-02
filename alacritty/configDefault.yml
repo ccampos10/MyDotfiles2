@@ -13,9 +13,12 @@ font:
     style: Bold Italic
   size: 10
 
-  #offset: # espaciado de las letras
-  #  x: 0
-  #  y: 0
+  offset: # espaciado de las letras
+    x: 0
+    y: -2
+  glyph_offset: # ubicacion de las letras
+    x: 0
+    y: -1
 
 colors:
   primary:
