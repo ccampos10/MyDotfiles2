@@ -2,3 +2,4 @@
 - ver plugins para zsh
 - mejorar los colores
 - configurar grub
+- un error con ranger y ueberzug(ver con el filelog)
