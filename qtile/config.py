@@ -5,13 +5,18 @@ from settings.Groups import groups
 from settings.Screens import screens
 from settings.Layouts import layouts
 from settings.path import path_qtile
+from libqtile.lazy import lazy
 
 from os import path
 import subprocess
 
+def mens(ss):
+    subprocess.call([path.join(path_qtile, 'autostart.sh'),ss ])
+
 @hook.subscribe.startup_complete
 def autostart():
-    subprocess.call([path.join(path_qtile, 'autostart.sh')])
+    mens(str(type(lazy.group.next_window())))
+
 
 dgroups_key_binder = None
 dgroups_app_rules = []
