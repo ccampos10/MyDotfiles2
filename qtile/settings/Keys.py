@@ -1,6 +1,6 @@
 from libqtile.config import Key, KeyChord
 from libqtile.lazy import lazy
-from .output import output, tt
+from .output import output
 
 mod = 'mod4'
 C = 'control'
