@@ -21,12 +21,12 @@ if test "$1";
 then
 	if test "$1" = "PowerOff";
 	then
-		#poweroff
-		sudo poweroff
+		poweroff
+		#sudo poweroff
 	elif test "$1" = "Reboot";
 	then
-		#reboot
-		sudo reboot
+		reboot
+		#sudo reboot
 	elif test "$1" = "Exit Qtile";
 	then
 		# (codigo de exit qtile)
