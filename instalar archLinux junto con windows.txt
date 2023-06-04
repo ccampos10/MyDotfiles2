@@ -1,0 +1,78 @@
+(ignorar las lineas que empiezan con ##)
+
+loadkeys us > para poner el teclado temporal en ingles
+fdisk -l > para ver los discos y sus particiones (se ocupa haora para ver como se llama el disco)
+lsblk > es lo mismo que fdisk -l pero mas visual
+cfdisk > es para particionar los discos
+
+(si pregunta el modo de la particion poner "dos")
+
+(aqui se partucionaran los discos, si esta windows instalado se tiene que particionar una parte dentro de windows,
+luego se tiene que particionar una parte para el sistema y otra para un swap que es un remplaso para la ram porsiacaso.
+si es bios solo se pueden tener 4 particiones en total entonses si hay que poner mas que cuatro,
+la cuarta se pone como extendida y se sigue ponienod las que faltan. la particion de swap se le cambia el tipo a linux swap)
+
+mkfs.ext4 /dev/sda# > el numeral se cambia por el numero de la particion en la que va a estar el sistema, esto es para configurar el tipo del sistema
+mkswap /dev/sda# > el numerador se cambia por el numero de la particion del swap, este comando es para configurar el tipo
+mount /dev/sda# /mnt > el numeral se cambia por el numero de la particion del sistema, es para montar la unidad en /mnt
+swapon /dev/sda# > el numerador se cambia por el numero de la particion del swap, es para activar la memoria swap
+ping 8.8.8.8 > es para comprobar si hay internet, si no hay buscar ayuda. para salir se apreta control + z
+
+(es mejor hacer la instalacion conectado con un cable ethernet)
+
+(/etc/pacman.d/mirrorlist es un archivo en el que esta la lista de mirror servers(servers de espejo) que es de donde se descargan
+ los paquetes se puede editar para poner los server mas sercas a ti lo mas alto posible de la lista haci les dara mas prioridad
+ a esos servers y descargara mas rapido)
+
+## pacstrap /mnt base base-devel grub os-prober ntfs-3g networkmanager gvfs gvfs-afc gvfs-mtp xdg-user-dirs linux linux-firmware nano dhcpd > es para descargar el sitema y paketes para instalarlo. si no se encuentra dhcpd instalar dhcp
+
+pacstrap /mnt base linux linux-firmware > es para descargar el sistema operatibo
+pacstrap /mnt sof-firmware neovim grub os-prober networkmanager ntfs-3g dhcp > es para instalar un controlador para targeta de sonido, un editor de texto(se puede remplasar con nano que es mas fasil de utilizar), 
+un gestor de aranque, verificador de sistemas instalados, un manejador de redes, un paquete de os-prober y algo nesesario, respectivamente
+pacstrap /mnt man-pages-es texinfo > paquetes opcionales para la documentacion
+
+## pacstrap /mnt netctl wpa_supplicant dialog > solo poner si tienes una targeta de wifi
+
+(buscar paquetes para targeta de wifi o ethernet)
+
+genfstab -U /mnt >> /mnt/etc/fstab > para crear unos archivos
+arch-chroot /mnt > para entrar al sistema ya instalado
+nvim /etc/hostname > se pone el nombre del equipo en el archivo
+
+(nvim(neovim) es un editor de archivos por lo que siepre que se ocupe en una linea es por que se abrira el editor,
+y :w es para guardar y :q para salir, :wq para guardar y salir. tambien puedes usar nano, control + o para guardar
+y control + x para salir)
+
+ln -sf /usr/share/zoneinfo/America/Santiago /etc/localtime > es para poner la zonma horaria de donde estes
+hwclock --systohc > para generar un archivo de hora
+nvim /etc/locale.gen > es para configurar el idioma del sistema, se navega asta donde diga "es" con el utf-8 y se bora el #
+locale-gen > es para que descarge y configure el idioma puesto anteriormente
+echo LANG=es_CL.UTF-8 > /etc/locale.conf > es para configurar la ubicacion
+echo KEYMAP=us > /etc/vconsole.conf > es para configurar de manera permanente el teclado a ingles
+os-prober > es para confirmar que el sistema detecta el windows, si no lo detecta buscar ayuda
+grub-install /dev/sda > es para instalar el sistema de aranque
+grub-mkconfig -o /boot/grub/grub.cfg > para actualisar el inicio
+mkinitcpio -P > para actualizar imagen de aranque(por lo general no es nesesario actualizarla)
+passwd > para cambiar la contraseña del usuario root, te pedira una contraseña luego de este comando
+groupadd #nombre del nuevo grupo de usuario# > es para crear un nuebo grupo de usuarios
+useradd -m -g #nombre del grupo# -s /bin/bash #nombre del nuevo usuario# > es para crear al usuario
+passwd #nombre de usuario# > es para colocar una contraseña al usuario creado anteriormente
+exit > para salir del sistema y bolber al instalador
+umount -R /mnt > para sacar el /mnt de disco
+reboot > para reiniciar
+
+(una ves reiniciado te pedira el usuario y contraseña que pusiste, luego ejecutas los siguientes comando)
+
+nano /etc/sudoers > al final del archibo poner #nombre de usuario# ALL=(ALL) NOPASSWD:ALL para poner al susuario creado como administrador
+systemctl enable NetworkManager.service > para activar el internet, luego hacer ping
+exit > nos salimos del usuario root para entrar al usuario creado
+sudo pacman -Syyu > es para actualizar el sistema
+
+(esta todo terminado, ahora tienes que instalar el gerstor de ventanas que gustes,
+pero antes tienes que poner lo siguiente para poder descargar los entronos graficos)
+
+sudo pacman -S xorg-server xorg-xinit
+sudo pacman -S mesa mesa-demos
+
+(driver graficos cuando se utiliza una maquina virtual. para grafica virtual Vmware)
+sudo pacman -S virtualbox-guest-utils xf86-video-vmware 
