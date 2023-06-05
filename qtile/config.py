@@ -5,8 +5,7 @@ from settings.Groups import groups
 from settings.Screens import screens
 from settings.Layouts import layouts, layout_float
 from settings.path import path_qtile, path_img
-from settings.output import output
-import settings.sockets
+#from settings.output import output
 
 from os import path
 import subprocess
@@ -22,7 +21,6 @@ def changeChord(name):
 @hook.subscribe.leave_chord
 def endChord():
     subprocess.call([path.join(path_qtile, 'changeChord.sh'),'Normal'])
-
 
 dgroups_key_binder = None
 dgroups_app_rules = []

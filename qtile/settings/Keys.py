@@ -41,8 +41,8 @@ keys = [
     #Key([mod, S], 'k', lazy.layout.shuffle_up()),
 
     #Moverse entre grupos
-    #Key([mod], 'Right', lazy.screen.next_group()),
-    #Key([mod], 'Left', lazy.screen.prev_group()),
+    Key([mod], 'Right', lazy.screen.next_group()),
+    Key([mod], 'Left', lazy.screen.prev_group()),
     Key([mod], 'p', lazy.screen.toggle_group()),
     Key([A], 'Tab', lazy.screen.toggle_group()),
     #Key([mod, A], 'l', lazy.screen.next_group()),
@@ -143,5 +143,5 @@ keys = [
         Key([C], 'k', lazy.layout.grow_up()),
         Key([], 'n', lazy.layout.normalize()), #normalizar tamano de las ventanas
 
-    ],mode=True, name='ventanas'),
+    ],mode=True, name='Ventanas'),
 ]

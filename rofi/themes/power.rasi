@@ -13,8 +13,8 @@ window {
   width: 150;
   height: 100;
   children: [listview]; /* omitir el inputbar para quitarla */
-  x-offset: 590;
-  y-offset: -285;
+  x-offset: 995;
+  y-offset: -605;
 }
 
 element {
