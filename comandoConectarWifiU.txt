@@ -1,0 +1,12 @@
+nmcli c add type wifi ifname wlan0 con-name Uni ssid <WIFI_NAME>
+nmcli c edit Uni
+goto 802-1x
+set eap peap
+set phase2-auth mschapv2
+set identity <GMAIL>
+set password <PASSWORD>
+back
+set wifi-sec.key-mgmt wpa-eap
+save
+activate
+quit
