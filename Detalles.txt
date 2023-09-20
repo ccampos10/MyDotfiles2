@@ -39,8 +39,19 @@ fuentes:
 	SpaceMono -> de NerdFont
 
 Drivers:
+	--------------------------
+	|   Amd Radeon hd 5670   |
+	--------------------------
+	mesa
 	xf86-video-ati
 	vulkan-radeon
 	lib32-vulkan-radeon
 	libva-mesa-driver
 	
+	--------------------------
+	|     Intel iris Xe      |
+	--------------------------
+	mesa
+	intel-media-driver
+	vulkan-intel
+	xf86-video-intel
