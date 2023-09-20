@@ -8,6 +8,7 @@ Paquetes instalados:
 	oh my zsh
 	starship -> prompt
 	neofetch
+	picom -> para las transparencias
 	alsa-lib -> para configurar el sonido
 	feh
 	p7zip

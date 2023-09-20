@@ -5,3 +5,4 @@ explorador de archivos
 navegadores
 transparencia
 inicio de usuario
+grub (inicio grafico con windows)

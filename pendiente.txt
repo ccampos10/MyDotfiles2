@@ -3,3 +3,5 @@
 - mejorar los colores
 - configurar grub
 - un error con ranger y ueberzug(ver con el filelog)
+- optimizar el polybar izquierdo (el modulo que muestra el nivel de teclado actual)
+- agrandar el rofi power
