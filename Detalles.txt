@@ -2,7 +2,6 @@ Paquetes instalados:
 	rofi
 	polybar
 	qtile
-	min
 	alacritty -> terminal
 	zsh -> shel
 	oh my zsh

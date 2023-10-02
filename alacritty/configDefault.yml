@@ -14,10 +14,10 @@ font:
   size: 10
 
   offset: # espaciado de las letras
-    x: 0
-    y: -2
+    x: -1
+    y: -1
   glyph_offset: # ubicacion de las letras
-    x: 0
+    x: -1
     y: -1
 
 colors:
