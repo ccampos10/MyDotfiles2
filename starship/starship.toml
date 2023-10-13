@@ -33,14 +33,14 @@ style = 'italic bold black bg:blue'
 disabled = true
 
 [git_status]
-format = '([$untracked$modified$ahead_behind$conflicted$ahead$behind$diverged$up_to_date$stashed$deleted$renamed$staged ]($style))'
+format = '([$untracked$modified$ahead_behind$conflicted$ahead$behind$diverged$stashed$deleted$renamed$staged ]($style))'
 untracked = ' 󰝒'
 modified = ' 󰏫'
 conflicted = ' 1'
 ahead = ' 󰔪 '
 behind = ' 3'
 diverged = ' 4'
-up_to_date = ' 5'
+#up_to_date = ' 5' #indica que el repositorio se encuentra actualizado con la nuve <Desabilitado>
 stashed = ' 6'
 deleted = ' 󰆴'
 renamed = ' 󰑕'

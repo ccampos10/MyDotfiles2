@@ -1,5 +1,4 @@
 vim
-polybar
 rofi
 explorador de archivos
 navegadores
@@ -7,3 +6,4 @@ transparencia
 inicio de usuario
 grub (inicio grafico con windows)
 excluir menus (eje click derecho en firefox) de picom (ver tipo con xprop)
+soporte para los gestos del touchpad
