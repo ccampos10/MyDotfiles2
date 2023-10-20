@@ -3,56 +3,50 @@ syntax reset
 let g:colors_name = "green"
 set background=dark
 
-hi idk              ctermbg=196 ctermfg=231
-hi ik               ctermbg=46 ctermfg=231
+hi Normal               guifg=#dadada   gui=none    guibg=none
 
-hi Comment          ctermfg=240
+hi Comment              guifg=#585858   gui=none
 
-"Constant
-hi Constant         ctermbg=196 ctermfg=231
-hi String           ctermfg=35
-hi link Character idk
-"Number puede ser 203, 204, 209 o 210
-hi Number           ctermfg=203
-hi Boolean          ctermfg=203
-hi Float            ctermfg=203
+hi Constant             guifg=#9660f0   gui=none
+hi String               guifg=#ef9862   gui=none
+hi link Character Constant
+hi Number               guifg=#f582e4   gui=none
+hi link Boolean Constant
+hi Float                guifg=#f582e4   gui=none
 
-"Identifier
-hi Identifier       ctermfg=28
-hi Function         ctermfg=111
+hi Identifier           guifg=#42ab49   gui=none
+hi Function             guifg=#5a92ff   gui=none
 
-"Statement
-hi Statement        ctermfg=41
-hi Conditional      ctermfg=135
-hi Repeat           ctermfg=135
-hi link Label idk
-hi Operator         ctermfg=209
-hi link Keyword idk
-hi Exception        ctermfg=135
+hi Statement            guifg=#37fd77   gui=none
+hi link Conditional Statement
+hi link Repeat Statement
+hi Label                guibg=#ff0000   gui=italic
+hi Operator             guifg=#69f5fd   gui=none
+hi Keyword              guibg=#ff0000   gui=italic
+hi link Exception Statement
 
-"PreProc
-hi PreProc          ctermfg=112
-hi Include          ctermfg=112
-hi Define           ctermfg=112
-hi link Macro idk
-hi link PreCondit idk
+hi PreProc              guifg=#ef40af   gui=none
 
-"Type
-hi Type             ctermfg=153
-hi link StorageClass idk
-hi Structure        ctermfg=197 cterm=bold
-hi link Typedef idk
+hi Type                 guifg=#e03d3d   gui=none
 
-"Special
-hi Special          ctermfg=129 cterm=italic
-hi link Special idk
-hi link SpecialChar idk
-hi link Tag idk
-hi link Delimiter idk
-hi link SpecialComment idk
-hi link Debug idk
+hi Special              guifg=#e0e080   gui=none
 
-hi Underline        ctermbg=196 ctermfg=231
-hi Ignore           ctermbg=196 ctermfg=231
-hi Error            ctermbg=197 ctermfg=231
-hi Todo             ctermbg=196 ctermfg=231
+hi DiffAdd              guifg=#6ef8be   gui=bold    guibg=none
+hi DiffChange           guifg=#e9ff81   gui=bold    guibg=none
+hi DiffDelete           guifg=#e03d3d   gui=bold    guibg=none
+hi DiffText             guifg=#ffff00   gui=none    guibg=#ff0000
+
+hi Pmenu                guifg=#dadada               guibg=#454545
+hi SignColumn           guifg=#ffff00               guibg=none
+hi Title                guifg=#ffff00               guibg=#ff0000
+hi LineNr               guifg=#747474               guibg=none
+hi NonText              guifg=#747474               guibg=none
+hi SpecialComment       guifg=#ffff00               guibg=#ff0000
+hi CursorLine           guifg=none                  guibg=#454545
+hi TabLineFill          guifg=#ffff00               guibg=#ff0000
+hi TabLine              guifg=#ffff00               guibg=#ff0000
+hi StatusLine           guifg=#dadada   gui=bold    guibg=#454545
+hi StatusLineNC         guifg=#dadada   gui=none    guibg=none
+hi Search               guifg=#dadada   gui=bold    guibg=#747474
+hi VertSplith           guifg=#ffff00               guibg=#ff0000
+hi Visual               guifg=none      gui=italic  guibg=#454545

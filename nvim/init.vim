@@ -1,7 +1,7 @@
 set number
 set mouse
 set numberwidth=1
-set clipboard=unnamed
+set clipboard=unnamedplus
 syntax enable
 set showcmd
 set ruler
@@ -10,6 +10,7 @@ set showmatch
 set sw=2
 set relativenumber
 set nocompatible
+set termguicolors "usa guicolors en hex
 
 call plug#begin('~/.vim/plugged')
 
@@ -26,6 +27,7 @@ Plug 'jiangmiao/auto-pairs' "Autocompleta corchetes, llaves, etc
 Plug 'mhinz/vim-signify' "Visualisa las ediciones desde el ultimo commit
 Plug 'yggdroot/indentline' "Visualisa cuando el codigo esta identado por ejemplo en una funcion
 Plug 'scrooloose/nerdcommenter' "Atajo para comentar lineas
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' } "Muestra los clores en el codigo
 
 call plug#end()
 
@@ -35,6 +37,8 @@ colorscheme green
 "let g:gruvbox_contrast_dark = 'hard'
 " configuracion nerdtree
 let NERDTreeQuitOnOpen=1 " se cierra nerdtree despues de abrir un archivo
+let g:Hexokinase_optInPatterns = 'full_hex,rgb,rgba,hsl,hsla'
+let g:Hexokinase_highlighters = ['foregroundfull']
 
 " atajos
 let mapleader = " "

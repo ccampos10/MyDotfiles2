@@ -12,11 +12,11 @@ colors:
     cyan: "#52c9d9"
     white: "#ffffff"
   bright:
-    black: "#4d4d4d"
+    black: "#585858"
     red: "#fc958d"
     green: "#7ed683"
     yellow: "#ffdd78"
-    blue: "#5397db"
+    blue: "#87afff"
     magenta: "#cc8dfc"
     cyan: "#8cf1ff"
     white: "#ffffff"
