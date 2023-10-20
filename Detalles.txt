@@ -3,6 +3,8 @@ Paquetes instalados:
 	polybar
 	qtile
 	alacritty -> terminal
+	neovim -> editor de texto
+	vim-plug -> gestor de plugins de neovim, descargado directamente de github
 	zsh -> shel
 	oh my zsh
 	starship -> prompt

@@ -1,19 +1,19 @@
 format = '$character$jobs$battery([[$all](fg:black bg:white)](white) )([$git_branch$git_status](fg:blue))$directory'
 add_newline = false
-palette = 'green'
+#palette = 'green'
 
-[palettes.green]
-darkgreen = '#0f7514'
-lightgreen = '#7ed683'
-lightblue = '#5397db'
-red = '#e03d3d'
-blue = '#375ae6'
+#[palettes.green]
+#darkgreen = '#0f7514'
+#lightgreen = '#7ed683'
+#lightblue = '#5397db'
+#red = '#e03d3d'
+#blue = '#375ae6'
 
 [directory]
 #format = '([[$read_only](fg:black bg:bright-purple)]($read_only_style)) [$path]($style) '
 format = ' [$path]($style) '
 truncation_length = 2
-style = 'bold green'
+style = 'bold bright-green'
 #read_only = ' 󰉐 '
 #read_only_style = 'bright-purple'
 
@@ -60,9 +60,9 @@ disabled = true #ver que hace
 format = '[$symbol]($style) '
 symbol = ''
 symbol_threshold = 1
-style = 'lightblue'
+style = 'bright-blue'
 
 [character]
 format = '$symbol '
-success_symbol = '[](bold lightgreen)[](bold darkgreen)'
+success_symbol = '[](bold bright-green)[](bold green)'
 error_symbol ='[✖](bold red)'

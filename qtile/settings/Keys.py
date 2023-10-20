@@ -119,7 +119,7 @@ keys = [
         Key([], 'l', lazy.layout.right()),
         Key([], 'j', lazy.layout.down()),
         Key([], 'k', lazy.layout.up()),
-        
+
         #Moverse entre grupos
         Key([], 'Right', lazy.screen.next_group()),
         Key([], 'Left', lazy.screen.prev_group()),
@@ -129,7 +129,7 @@ keys = [
         Key([C,A], 'h', toPrevGroup(True)), #mover la ventana de focus y la vista al annterior grupo
         Key([A], 'l', lazy.screen.next_group()),
         Key([A], 'h', lazy.screen.prev_group()),
-        
+
         #Mover ventana
         Key([S], 'h', lazy.layout.shuffle_left()),
         Key([S], 'l', lazy.layout.shuffle_right()),

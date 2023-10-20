@@ -2,8 +2,9 @@ vim
 rofi
 explorador de archivos
 navegadores
-transparencia
 inicio de usuario
 grub (inicio grafico con windows)
 excluir menus (eje click derecho en firefox) de picom (ver tipo con xprop)
 soporte para los gestos del touchpad
+git guardar credenciales
+configurar el dark mode (https://wiki.archlinux.org/title/Dark_mode_switching)
