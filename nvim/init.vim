@@ -28,6 +28,8 @@ Plug 'mhinz/vim-signify' "Visualisa las ediciones desde el ultimo commit
 Plug 'yggdroot/indentline' "Visualisa cuando el codigo esta identado por ejemplo en una funcion
 Plug 'scrooloose/nerdcommenter' "Atajo para comentar lineas
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' } "Muestra los clores en el codigo
+Plug 'Valloric/YouCompleteMe' "Autocompletado
+Plug 'rust-lang/rust.vim' "Autocompletado de rust
 
 call plug#end()
 

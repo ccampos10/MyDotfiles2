@@ -22,7 +22,7 @@ hi link Conditional Statement
 hi link Repeat Statement
 hi Label                guibg=#ff0000   gui=italic
 hi Operator             guifg=#69f5fd   gui=none
-hi Keyword              guibg=#ff0000   gui=italic
+hi link Keyword Statement
 hi link Exception Statement
 
 hi PreProc              guifg=#ef40af   gui=none

@@ -19,6 +19,8 @@ Paquetes instalados:
 	vsCode -> paquete descargado de la pagina oficial
 	ranger -> un manejador de archivos
 	oldUeberzug -> paquete de python que muestra imagenes en consola (de mi repositorio por que el original ha sido eliminado(puede verse en los commits antiguos)), instalar con python -m pip install el archivo setup.py
+	xf86-input-libinput -> libreria de configuracion de perifericos
+	xorg-xinput -> libreria de configuracion de perifericos
 	xdg-utils -> paquetes para que funcione el actualizador de vs code
 	xorg-xprop -> propiedades del servidor X
 	xclip -> Para el portapapeles

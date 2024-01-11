@@ -1,4 +1,4 @@
-nmcli c add type wifi ifname wlan0 con-name Uni ssid <WIFI_NAME>
+nmcli c add type wifi ifname <WIFI_DEVICE_NAME> con-name Uni ssid <WIFI_NAME>
 nmcli c edit Uni
 goto 802-1x
 set eap peap

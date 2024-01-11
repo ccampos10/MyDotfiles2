@@ -1,0 +1,27 @@
+working_directory = "/home/ccampos"
+ipc_socket = true # alacritty msg
+import = [
+  "~/.config/alacritty/configDefault.toml", # configuracion por defecto
+  "~/.config/alacritty/tema.toml", # tema
+  "~/.config/alacritty/config.toml" # configuracion
+]
+
+[window]
+opacity = 0.85
+padding = { x = 10, y = 10 }
+title = "title" # dynamic title tiene que estar en falso para que funcione
+dynamic_title = true # esto tiene que estar en falso para poder editar el titulo
+
+[scrolling]
+multiplier = 3 # multiplicador de lineas del scroll
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[cursor]
+style = { shape = "Underline", blinking = "on"}
+# blinking es el parpadeo del cursor
+blink_interval = 300 # tiempo en que parpadea el cursor
+blink_timeout = 8 # tiempo en que deja de parpadear
+unfocused_hollow = false # Cuadrado al dejar la terminal
+thickness = 0.2 # grosor del cursor

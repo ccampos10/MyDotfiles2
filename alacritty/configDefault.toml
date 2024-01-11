@@ -1,0 +1,29 @@
+[font]
+normal = { family = "Hack Nerd Font", style = "Regular" }
+italic = { family = "Hack Nerd Font", style = "Italic" }
+bold = { family = "Hack Nerd Font", style = "Bold" }
+bold_italic = { family = "Hack Nerd Font", style = "Bold Italic" }
+size = 10.0
+
+offset = { x = -1, y = -1 } # espaciado de las letras
+glyph_offset = { x = -1, y = -1 } # ubicacion de las letras
+
+[colors]
+cursor = { text = "CellBackground", cursor = "CellForeground" }
+footer_bar = { background = '#ff0000', foreground = '#ff0000' } # Que es esto??
+selection = { text = "CellBackground", background = '#219177' }
+transparent_background_colors = false # transparencia a los fondos de distinto color
+
+[colors.primary]
+background = '#080b0a'
+foreground = '#ffffff'
+dim_foreground = '#ff0000' # Que es esto??
+bright_foreground = '#ff0000' # Que es esto??
+
+[bell]
+animation = "EaseOutSine"
+duration = 200
+color = '#f5bc42'
+  #command:
+  # program: echo
+  # args: ["Hellor, World!"]
