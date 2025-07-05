@@ -7,7 +7,7 @@ import = [
 ]
 
 [window]
-opacity = 0.85
+opacity = 0.75
 padding = { x = 10, y = 10 }
 title = "title" # dynamic title tiene que estar en falso para que funcione
 dynamic_title = true # esto tiene que estar en falso para poder editar el titulo

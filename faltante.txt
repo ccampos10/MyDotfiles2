@@ -5,3 +5,4 @@ inicio de usuario
 grub (inicio grafico con windows)
 excluir menus (eje click derecho en firefox) de picom (ver tipo con xprop)
 git guardar credenciales
+configurar el escalado de la pantalla, para que las aplicaciones no se vean tan pequenias: "https://wiki.archlinux.org/title/HiDPI#Window_managers"
