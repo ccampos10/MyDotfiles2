@@ -1,0 +1,66 @@
+		    LSP (Lenguaje, autocompletado, diagnósticos)
+		    | Plugin                              | Función                             |
+		    | ----------------------------------- | ----------------------------------- |
+		    | `neovim/nvim-lspconfig`             | Configura los LSPs fácilmente       |
+		    | `williamboman/mason.nvim`           | Gestor de LSPs, DAPs y herramientas |
+		    | `williamboman/mason-lspconfig.nvim` | Integración entre mason y lspconfig |
+		    | `hrsh7th/nvim-cmp`                  | Autocompletado inteligente          |
+		    | `hrsh7th/cmp-nvim-lsp`              | Fuente LSP para `nvim-cmp`          |
+		    | `L3MON4D3/LuaSnip`                  | Snippets para autocompletado        |
+		    | `saadparwaiz1/cmp_luasnip`          | Fuente de snippets para `nvim-cmp`  |
+
+Treesitter (sintaxis avanzada)
+| Plugin                                        | Función                                   |
+| --------------------------------------------- | ----------------------------------------- |
+| `nvim-treesitter/nvim-treesitter`             | Coloreado y análisis de sintaxis avanzado |
+| `nvim-treesitter/nvim-treesitter-textobjects` | Text objects inteligentes                 |
+
+		    Búsqueda, navegación, archivos
+		    | Plugin                          | Función                                  |
+		    | ------------------------------- | ---------------------------------------- |
+		    | `nvim-telescope/telescope.nvim` | Búsqueda fuzzy, archivos, símbolos, etc. |
+		    | `nvim-lua/plenary.nvim`         | Librería requerida por muchos plugins    |
+		    | `nvim-tree/nvim-tree.lua`       | Árbol de archivos tipo VS Code           |
+
+		    Interfaz de usuario (UI)
+		    | Plugin                                      | Función                              |
+		    | ------------------------------------------- | ------------------------------------ |
+		    | `nvim-lualine/lualine.nvim`                 | Barra de estado moderna              |
+		    | `folke/tokyonight.nvim` / `catppuccin/nvim` | Colores modernos y bonitos           |
+		    | `goolord/alpha-nvim`                        | Pantalla de inicio personalizable    |
+		    | `folke/noice.nvim` + `rcarriga/nvim-notify` | Mejoras en mensajes y notificaciones |
+
+		    Gestión de buffers, ventanas, pestañas
+		    | Plugin                        | Función                                   |
+		    | ----------------------------- | ----------------------------------------- |
+		    | `akinsho/bufferline.nvim`     | Barra de buffers estilo pestañas          |
+		    | `lewis6991/gitsigns.nvim`     | Indicadores Git en el margen              |
+		    | `nvim-neo-tree/neo-tree.nvim` | Árbol de archivos alternativo a nvim-tree |
+
+Productividad y utilidades
+| Plugin                                            | Función                                    |
+| ------------------------------------------------- | ------------------------------------------ |
+| `tpope/vim-surround` (o `kylechui/nvim-surround`) | Manipular paréntesis, comillas, etc.       |
+| `numToStr/Comment.nvim`                           | Comentarios fáciles (`gcc`, `gbc`, etc.)   |
+| `windwp/nvim-autopairs`                           | Cierre automático de paréntesis y comillas |
+| `lukas-reineke/indent-blankline.nvim`             | Muestra indentaciones como líneas guía     |
+| `folke/which-key.nvim`                            | Menú de ayuda para `<leader>`              |
+
+Depuración (Debugging)
+| Plugin                  | Función                                   |
+| ----------------------- | ----------------------------------------- |
+| `mfussenegger/nvim-dap` | Soporte para DAP (Debug Adapter Protocol) |
+| `rcarriga/nvim-dap-ui`  | Interfaz visual para `nvim-dap`           |
+
+
+Otros populares (más avanzados)
+| Plugin                 | Función                                    |
+| ---------------------- | ------------------------------------------ |
+| `ThePrimeagen/harpoon` | Favoritos/navegación rápida entre archivos |
+| `folke/trouble.nvim`   | Diagnósticos en una vista estructurada     |
+| `mbbill/undotree`      | Historia de cambios visual                 |
+| `stevearc/oil.nvim`    | Navegador de archivos estilo "Finder"      |
+
+Buscar los plugins de este ide: https://www.lazyvim.org/plugins
+Configurar este plugin: https://github.com/folke/snacks.nvim
+Buscar los plugins que soporta este tema: https://github.com/nyoom-engineering/oxocarbon.nvim

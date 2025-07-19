@@ -1,0 +1,3 @@
+Se requiere instalar ripgrep con pacman
+Se requiere instalar fd con pacman (es opcional pero recomendado)
+Se requiere instalar una fuente que soporte o tenga bonitos caracteres Braille (⠛,⠿,⣦). Actualmente edite una fuente con FontForge, copiando los caracteres de una fuente que soporta Braille a otra de preferencia

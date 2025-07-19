@@ -6,3 +6,4 @@
 - optimizar el polybar izquierdo (el modulo que muestra el nivel de teclado actual)
 - agrandar el rofi power
 - buscar que es gtk y temas para este
+- terminar de configurar algunos plugins de nvim (los que tienen el comentario de configurar!!!!!)

@@ -25,6 +25,10 @@ if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 fi
 neofetch
 
+# Alias
+# alias para configurar la luz del monitor
+alias light='sudo light'
+
 export EDITOR='nvim' # editor por defecto
 export STARSHIP_CONFIG=~/.config/starship/starship.toml # ubicacion archivo de configuracion de starship
 export PATH="$PATH:/usr/local/go/bin" # agregar Go al PATH

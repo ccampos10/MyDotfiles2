@@ -4,7 +4,7 @@ Paquetes instalados:
 	qtile
 	alacritty -> terminal
 	neovim -> editor de texto
-	vim-plug -> gestor de plugins de neovim, descargado directamente de github
+	lazy-vim -> gestor de plugins de neovim, descargado directamente de github
 	zsh -> shel
 	oh my zsh
 	starship -> prompt
@@ -24,6 +24,9 @@ Paquetes instalados:
 	xdg-utils -> paquetes para que funcione el actualizador de vs code
 	xorg-xprop -> propiedades del servidor X
 	xclip -> Para el portapapeles
+	paru -> ayudante de AUR, para instalar paquetes de AUR
+	polkit -> creo que con instalar esto simplemente se permite ejecutar poweroff y reboot sin sudo
+	cpupower -> para limitar la frecuencia del cpu. Nesecita configurarce (/etc/default/cpupower) y habilitar ("systemctl enable cpupower"). Info https://wiki.archlinux.org/title/CPU_frequency_scaling#cpupower
 
 fuentes:
 	gnu-free-fonts -> de pacman

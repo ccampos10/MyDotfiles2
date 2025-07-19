@@ -1,0 +1,2 @@
+Aprender sobre ripgrep y la diferencia con grep: https://github.com/BurntSushi/ripgrep
+Aprender sobre fd: https://github.com/sharkdp/fd 

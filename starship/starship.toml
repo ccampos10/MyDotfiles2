@@ -1,4 +1,4 @@
-format = '$character$jobs$battery([[$all](fg:black bg:white)](white) )([$git_branch$git_status](fg:blue))$directory'
+format = '$character$jobs$battery([[$all](fg:black bg:white)](white) )([$git_branch](fg:blue)[](fg:blue bg:black)[$git_status](fg:black))$directory'
 add_newline = false
 #palette = 'green'
 
@@ -33,7 +33,7 @@ style = 'italic bold black bg:blue'
 disabled = true
 
 [git_status]
-format = '([$untracked$modified$ahead_behind$conflicted$ahead$behind$diverged$stashed$deleted$renamed$staged ]($style))'
+format = '([$untracked$modified$ahead_behind$conflicted$ahead$behind$diverged$stashed$deleted$renamed$staged ]($style))'
 untracked = ' 󰝒'
 modified = ' 󰏫'
 conflicted = ' 1'
@@ -45,7 +45,7 @@ stashed = ' 6'
 deleted = ' 󰆴'
 renamed = ' 󰑕'
 staged = ' 󱉲'
-style = 'fg:black bg:blue'
+style = 'fg:bright-black bg:black'
 
 [line_break]
 disabled = true
@@ -66,6 +66,9 @@ style = 'bright-blue'
 format = '$symbol '
 success_symbol = '[](bold bright-green)[](bold green)'
 error_symbol ='[✖](bold red)'
+
+[lua]
+disabled = true
 
 [rust]
 disabled = true
