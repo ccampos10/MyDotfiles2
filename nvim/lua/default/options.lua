@@ -17,6 +17,7 @@ vim.o.showcmd = true -- muestra los comandos escritos??
 vim.o.showmatch = true -- resalta los corchetes de cierre
 vim.o.shiftwidth = 2 -- espacios del indentado (tab)
 vim.o.laststatus = 3 -- muestra una sola status bar para todas las ventanas abiertas ("split")
+vim.o.scrolloff = 8
 
 vim.cmd("syntax enable") -- habilita el resaltado de sintaxis
 

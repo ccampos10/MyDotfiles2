@@ -11,7 +11,7 @@ return {
   },
   config = function()
     require("mason-lspconfig").setup {
-      ensure_installed = {"pyright", "lua_ls", "rust_analyzer", "bashls"}, -- Instala los lsp espesificados
+      ensure_installed = {"pyright", "lua_ls", "rust_analyzer", "bashls", "html", "cssls"}, -- Instala los lsp espesificados
       automatic_enable = true,
     }
   end

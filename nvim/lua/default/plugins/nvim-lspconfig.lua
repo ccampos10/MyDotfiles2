@@ -57,6 +57,13 @@ return {
       }
     }
 
+    lspconfig.html.setup({
+      capabilities = capabilities,
+    })
+    lspconfig.cssls.setup({
+      capabilities = capabilities,
+    })
+
     -- Puedes añadir más servidores aquí
   end
 }

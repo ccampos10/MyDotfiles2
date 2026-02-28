@@ -9,7 +9,7 @@ governor='powersave'
 #min_freq="2.25GHz"
 #max_freq="3GHz"
 min_freq='400MHz'
-max_freq='2.6GHz'
+max_freq='1.6GHz'
 # Max default 3.8GHz para la cpu intel i5 1135g7
 
 # Specific frequency to be set.
