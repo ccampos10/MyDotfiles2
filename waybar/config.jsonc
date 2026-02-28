@@ -1,0 +1,140 @@
+// -*- mode: jsonc -*-
+{
+    "reload_style_on_change": true,
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 30, // Waybar height (to be removed for auto height)
+    // "width": 2400,
+    // "width": 1280, // Waybar width
+    "margin": "10 50 0 50",
+    "modules-left": [
+        "custom/home",
+	"custom/div",
+	"clock",
+	"custom/inter_div",
+	"battery"
+	// "custom/div#sec",
+	// "custom/div#ter",
+	// "custom/div#cuar"
+    ],
+    "modules-center": [
+	"bluetooth",
+	"hyprland/workspaces",
+	"network",
+	"pulseaudio/slider",
+	"pulseaudio",
+	"systemd-failed-units"
+    ],
+    "modules-right": [
+	"systemd-failed-units"
+    ],
+    "spacing": 0, // Gaps between modules (0px)
+    "battery": {
+	"interval": 30,
+        "states": {
+            // "good": 95,
+	    "full": 100,
+            "warning": 20,
+            "critical": 10
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󰠠",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+    "bluetooth": {
+	"format": "{status}",
+	"format-disabled": "󰂲 dis",
+	"format-on": "󰂯 {controller_alias}",
+	"format-off": "󰂲 off",
+	"format-connected": "󰂱 {num_connections}",
+	"format-connected-battery": "󰂱 {num_connections} {device_battery_percentage}%",
+	"format-no-controller": "󰂭"
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>",
+        "format-alt": "{:%Y-%m-%d}",
+	"calendar": {
+	    "mode": "year",
+	    "mode-mon-col": 3
+	}
+    },
+    "hyprland/workspaces": {
+	"active-only": false,
+	// "format": "{id}-{icon}-{windows}",
+	"format": "{icon}",
+	"format-icons": {
+	    "active": "",
+	    "default": "",
+	    "empty": "",
+	    "persistent": "",
+	    "special": "󱥸",
+	    "urgent": "󱥸"
+	},
+	"persistent-workspaces": {"1": "*", "2": "*", "3": "*"}
+	// "workspace-taskbar": {
+	//     "enable": true,
+	//     // "format": "{icon}"
+	//     "format": "{icon} {title:.20}",
+	//     "icon-size": 16
+	// }
+    },
+    "network": {
+        "format-wifi": " ",
+        "format-ethernet": "󰌗",
+        "format-linked": "󱚵",
+        "format-disconnected": " ",
+        "format-alt": "{ipaddr}/{cidr}",
+        "tooltip-format": "{ipaddr} - {essid}"
+    },
+    "pulseaudio/slider": {
+	"min": 0,
+	"max": 100
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "alacritty -e pulsemixer"
+    },
+    "systemd-failed-units": {
+	"formmat": "{nr_failed} failed",
+	"format-ok": "ok",
+	"hide-on-ok": false,
+	"user": true,
+	"system": true
+    },
+    // "backlight": {
+    //     // "device": "acpi_video1",
+    //     "format": "{percent}% {icon}",
+    //     "format-icons": ["", "", "", "", "", "", "", "", ""]
+    // },
+    "custom/home": {
+	// "format": "󰌽  󰣇"
+	"format": "󰌽"
+    },
+    "custom/inter_div": {
+	"format": ""
+    },
+    "custom/div": {
+	"format": ""
+    }
+ //    "custom/div#sec": {
+	// "format": ""
+ //    },
+ //    "custom/div#ter": {
+	// "format": ""
+ //    },
+ //    "custom/div#cuar": {
+	// "format": ""
+ //    }
+}

@@ -1,0 +1,2 @@
+Ver e informarce de los grupos, y configurarlos https://wiki.hypr.land/Configuring/Variables/#group
+Configurar master layout https://wiki.hypr.land/Configuring/Master-Layout/
